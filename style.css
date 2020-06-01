@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+    "header header header"
+    "left middle right"
+    "footer footer footer";
+}
+
+.board{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: black;
+}
+
+.cell{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+}
