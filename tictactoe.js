@@ -1,10 +1,7 @@
 
 //modular GameBoard Object
 const GameBoard = ( () => {
-    //const cellElements = document.querySelectorAll(".cell")
     const BoardArray = ['','','','','','','','',''];
-    //cellElements.forEach(cell => BoardArray.push(cell))
-
     return {
         BoardArray
     }
@@ -131,5 +128,6 @@ function ResetBoard() {
         let squareID = document.getElementById(`${i}`)
         squareID.innerText = ''
     }
+    GameBoard.BoardArray = ['','','','','','','','',''];
 }
 
