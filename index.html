@@ -9,6 +9,18 @@
 <body>
 <!--Code goes here-->
     <h1 style="grid-area: header">Tic Tac Toe</h1>
+    <div style="grid-area: left" class="Left">
+        <div id="ScoreBoard">
+            <div id="Player1Score">
+                <p class="ScoreCaption">Player 1</p>
+                <input type="text" name="Xscore" id="Xscore" class="Score" style="grid-area: left" disabled value="0">
+            </div>
+            <div id="Player2Score">
+                <p class="ScoreCaption">Player 2</p>
+                <input type="text" name="Oscore" id="Oscore"  class="Score" style="grid-area: left" disabled value="0">
+            </div>
+        </div>
+    </div>
     <div class="board" style="grid-area: middle">
         <div class="cell" id="0"></div>
         <div class="cell" id="1"></div>
@@ -21,8 +33,8 @@
         <div class="cell" id="8"></div>
     </div>
     <div style="grid-area: right">
-        <button>Start Game</button>
-        <button>Reset</button>
+        <button id="Reset" class="buttons">Reset Board</button>
+        <button id="Restart" class="buttons">Restart Game</button>
     </div>
 </body>
 <!-- JS source-->
