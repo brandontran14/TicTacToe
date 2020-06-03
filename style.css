@@ -1,5 +1,7 @@
 h1{
     text-align: center;
+    font-size: 45px;
+    font-family: "Arial Black";
 }
 body{
     display: grid;
@@ -8,6 +10,7 @@ body{
     "header header header"
     "left middle right"
     "footer footer footer";
+    background-image: linear-gradient(to right, white, grey);
 }
 
 
@@ -75,7 +78,7 @@ body{
 }
 .cell{
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.1);
     transition: all 0.4s ease 0s;
 }
 
